@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -25,13 +27,29 @@
     <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
-        <version>3.6.1</version>
+        <version>8.4.0</version>
     </dependency>
     <dependency>
         <groupId>net.semanticmetadata</groupId>
         <artifactId>lire</artifactId>
-        <version>0.9</version>
+        <version>1.05</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/lib/LIRE-1.0_b05.jar</systemPath>
     </dependency>
-    
+      <dependency>
+          <groupId>com.github.haifengl</groupId>
+          <artifactId>smile-core</artifactId>
+          <version>2.0.0</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-math3</artifactId>
+          <version>3.6.1</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-lang3</artifactId>
+          <version>3.9</version>
+      </dependency>
   </dependencies>
 </project>
